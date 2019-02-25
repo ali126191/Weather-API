@@ -1,0 +1,58 @@
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size:1.2rem;
+}
+body{
+ background-image: linear-gradient(to right,
+ #3f9ddb,
+ #135d8b);
+ color:white;
+ font-family: sans-serif;
+ text-align: center;
+ padding:50px;
+ margin:0 auto;
+ font-size: 20px;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+
+.button {
+  background:#e74c3c;
+  padding:10px;
+  width:200px;
+  margin:50px auto;
+  font-size: 1.2rem;
+  border:none;
+}
+
+.all {
+  display: flex;
+  justify-content: center;
+}
+
+.temp {
+  font-size: 7.0rem;
+  font-weight: 100;
+}
+
+.city {
+  font-size:1.2rem;
+}
+
+
+
