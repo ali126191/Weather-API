@@ -1,21 +1,21 @@
-
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-weight: 300;
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
-body{
- background-image: linear-gradient(to right,
- #3f9ddb,
- #135d8b);
- color:white;
- font-family: sans-serif;
- text-align: center;
- padding:50px;
- margin:0 auto;
- font-size: 20px;
+
+body {
+  background-image: linear-gradient(to right,
+    #3f9ddb,
+    #135d8b);
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px;
+  margin: 0 auto;
+  font-size: 20px;
 
 }
 
@@ -33,16 +33,16 @@ h1 {
 
 
 .button {
-  background:#e74c3c;
-  padding:10px;
-  width:200px;
-  margin:50px auto;
+  background: #e74c3c;
+  padding: 10px;
+  width: 200px;
+  margin: 50px auto;
   font-size: 1.2rem;
-  border:none;
+  border: none;
 }
 
 .all {
-  padding:20px 10px;
+  padding: 20px 10px;
   display: flex;
   justify-content: center;
 }
@@ -53,8 +53,5 @@ h1 {
 }
 
 .city {
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
-
-
-

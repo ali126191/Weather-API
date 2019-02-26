@@ -3,13 +3,17 @@ const temp = document.querySelector(".temp");
 const feelsLike = document.querySelector(".feels-like");
 const p = document.querySelector("#paragraph");
 
-window.addEventListener("load", function() {
+btn.addEventListener("click", loadAll());
+btn.addEventListener("touch", loadAll());
+
+
+function loadAll()  {
   const ajax = new XMLHttpRequest();
   const url =
     "http://api.apixu.com/v1//forecast.json?key=e9ca59d54bc34ce882004220192502&q=Calgary";
   ajax.open("GET", url, true);
 
-  ajax.onload = function() {
+  ajax.onload = function () {
     if (this.status === 200) {
       const data = JSON.parse(this.responseText);
 
@@ -24,8 +28,8 @@ window.addEventListener("load", function() {
     }
   };
 
-  ajax.onerror = function() {
+  ajax.onerror = function () {
     console.log("there was an error");
   };
   ajax.send();
-});
+}
