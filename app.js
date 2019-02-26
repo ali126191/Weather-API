@@ -1,9 +1,9 @@
 const btn = document.querySelector("#btn");
-const temp = document.querySelector('.temp');
+const temp = document.querySelector(".temp");
 const feelsLike = document.querySelector(".feels-like");
 const p = document.querySelector("#paragraph");
 
-btn.addEventListener("click", function() {
+window.addEventListener("load", function() {
   const ajax = new XMLHttpRequest();
   const url =
     "http://api.apixu.com/v1//forecast.json?key=e9ca59d54bc34ce882004220192502&q=Calgary";
@@ -12,7 +12,6 @@ btn.addEventListener("click", function() {
   ajax.onload = function() {
     if (this.status === 200) {
       const data = JSON.parse(this.responseText);
-
 
       temp.textContent = data.current.temp_c;
       feelsLike.textContent = data.current.feelslike_c;
